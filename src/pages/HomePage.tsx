@@ -6,6 +6,7 @@ import SeriesFilter from '../components/SeriesFilter'
 import SpeciesCarousel from '../components/SpeciesCarousel'
 import SpeciesGrid from '../components/SpeciesGrid'
 import SpeciesDetailOverlay from '../components/SpeciesDetailOverlay'
+import Footer from '../components/Footer'
 import { useSpeciesFilter } from '../hooks/useSpeciesFilter'
 import { allSpecies, totalSpeciesCount } from '../data/species'
 
@@ -82,6 +83,8 @@ export default function HomePage() {
           <SpeciesGrid species={filteredSpecies} onExpand={openSpecies} />
         </section>
       </main>
+
+      <Footer />
 
       {activeSpecies && <SpeciesDetailOverlay species={activeSpecies} onClose={closeSpecies} />}
     </div>

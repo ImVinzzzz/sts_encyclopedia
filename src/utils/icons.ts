@@ -11,6 +11,17 @@ import {
   faBookOpen,
   faExpand,
   faLayerGroup,
+  faArrowUp,
+  faPenToSquare,
+  faPlus,
+  faTrash,
+  faCopy,
+  faCheck,
+  faArrowLeft,
+  faDownload,
+  faRotateLeft,
+  faHouse,
+  faCode,
 } from '@fortawesome/free-solid-svg-icons'
 
 export const icons = {
@@ -26,4 +37,15 @@ export const icons = {
   book: faBookOpen,
   expand: faExpand,
   layers: faLayerGroup,
+  arrowUp: faArrowUp,
+  edit: faPenToSquare,
+  plus: faPlus,
+  trash: faTrash,
+  copy: faCopy,
+  check: faCheck,
+  arrowLeft: faArrowLeft,
+  download: faDownload,
+  reset: faRotateLeft,
+  home: faHouse,
+  code: faCode,
 }
