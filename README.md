@@ -1,8 +1,20 @@
 # Starfleet Database // Specie Aliene e Civiltà
 
-Enciclopedia alfabetica delle specie di Star Trek, in stile LCARS modernizzato.
-React 18 + TypeScript + Tailwind CSS + React Router, con animazione flip 3D
-sulle schede di dettaglio.
+Enciclopedia delle specie e civiltà di Star Trek, realizzata in stile LCARS modernizzato con React 18, TypeScript, Tailwind CSS, React Router e animazioni 3D flip card sulle schede di dettaglio.
+
+## Funzionalità Principali
+
+- **Registro Completo delle Specie**: Esplorazione alfabetica, ricerca istantanea e filtri per serie Star Trek (TOS, TAS, TNG, DS9, VOY, ENT, DIS, PIC, SNW, LD, PRO, FILM).
+- **Schede Dettaglio con Animazione 3D Flip**: Visualizzazione fronte/retro con classificazione biologica, quadrante galattico, pianeta d'origine, serie di comparsa, sinossi ed episodi chiave.
+- **Ritratti Visivi e Scansione Bio-Sensoriale**: Supporto per immagini reali con protezione dai blocchi hotlink (`referrerPolicy="no-referrer"`) e fallback automatico a una scansione bio-sensoriale stilizzata LCARS generata da CSS per le specie prive di foto.
+- **Editor Schede Specie (`/editor`)**:
+  - Modifica rapida delle schede esistenti tramite selettore.
+  - Creazione di nuove specie con autocompilazione dello slug univoco.
+  - Form ottimizzato con input anagrafici, menù a tendina (classificazione e quadranti), badge toggle per le serie TV e gestione dinamica degli episodi.
+  - Anteprima live 3D della scheda in tempo reale.
+  - Esportazione istantanea del codice TypeScript pronto per l'inclusione nel database o download JSON.
+- **Pulsante "Torna in Cima"**: Componente circolare LCARS fluttuante che appare allo scorrimento verticale e consente un ritorno fluido all'inizio della pagina.
+- **Footer LCARS Integrato**: Navigazione contestuale tra database ed editor, stato del terminale federale e disclaimer legale sui copyright.
 
 ## Requisiti
 
@@ -15,82 +27,66 @@ sulle schede di dettaglio.
 npm install
 ```
 
-Questo comando installa automaticamente tutte le dipendenze elencate in
-`package.json`, incluse:
-
-```bash
-# Già incluse in package.json — elencate qui per chiarezza:
-npm install react-router-dom
-npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
-npm install -D tailwindcss@^3 postcss autoprefixer
-```
+Questo comando installa automaticamente tutte le dipendenze elencate in `package.json`:
+- `react`, `react-dom`, `react-router-dom`
+- `@fortawesome/react-fontawesome`, `@fortawesome/free-solid-svg-icons`, `@fortawesome/fontawesome-svg-core`
+- `tailwindcss`, `postcss`, `autoprefixer`
 
 ## Comandi disponibili
 
 ```bash
 npm run dev       # avvia il server di sviluppo (Vite) con hot reload
-npm run build     # type-check + build di produzione in /dist
+npm run build     # type-check (tsc) + build di produzione in /dist
 npm run preview   # anteprima locale della build di produzione
 npm run lint      # controllo statico del codice (oxlint)
 ```
 
 ## Deploy
 
-Il progetto è pronto per essere collegato a **Vercel** tramite GitHub:
-nessun `base` è impostato in `vite.config.ts`, quindi il deploy funziona
-senza modifiche aggiuntive. Basta collegare il repository e Vercel rileva
-automaticamente la configurazione Vite (build command `npm run build`,
-output directory `dist`).
+Il progetto è pronto per essere distribuito su piattaforme come **Vercel** o **Netlify**:
+- Build command: `npm run build`
+- Output directory: `dist`
 
-## Struttura del progetto
+## Struttura del Progetto
 
 ```
 src/
 ├── types/
-│   └── species.ts          # interfacce TypeScript (Species, SeriesTag, ...)
+│   └── species.ts            # Tipi TypeScript (Species, SeriesTag, Quadrant, ...)
 ├── data/
-│   ├── species-a-g.ts       # dataset specie A-G
-│   ├── species-h-q.ts       # dataset specie H-Q
-│   ├── species-r-z.ts       # dataset specie R-Z
-│   ├── species.ts           # unione + ordinamento alfabetico
-│   └── seriesMeta.ts        # etichette serie/film e alfabeto A-Z
+│   ├── species-a-g.ts         # Dataset specie A-G
+│   ├── species-h-q.ts         # Dataset specie H-Q
+│   ├── species-r-z.ts         # Dataset specie R-Z
+│   ├── species.ts             # Unione dataset e ordinamento alfabetico
+│   └── seriesMeta.ts          # Metadati serie TV e alfabeto
 ├── hooks/
-│   └── useSpeciesFilter.ts  # logica di ricerca/filtri (lettera, serie, testo)
+│   └── useSpeciesFilter.ts    # Hook per ricerca, filtri alfabetici e serie
 ├── utils/
-│   └── icons.ts             # registro centralizzato icone FontAwesome
+│   └── icons.ts               # Registro centralizzato icone FontAwesome
 ├── components/
-│   ├── Header.tsx
-│   ├── SearchBar.tsx
-│   ├── AlphabetGrid.tsx
-│   ├── SeriesFilter.tsx
-│   ├── SeriesBadge.tsx
-│   ├── SpeciesCarousel.tsx
-│   ├── SpeciesMiniCard.tsx
-│   ├── SpeciesFlipCard.tsx     # animazione flip 3D fronte/retro
-│   ├── SpeciesDetailOverlay.tsx
-│   ├── SpeciesGrid.tsx
-│   ├── SpeciesPortrait.tsx     # placeholder visivo generato (no immagini reali)
-│   ├── LcarsElbow.tsx
-│   └── StarField.tsx
+│   ├── Header.tsx             # Intestazione principale LCARS
+│   ├── Footer.tsx             # Piè di pagina LCARS con link e disclaimer
+│   ├── ScrollToTop.tsx        # Pulsante fluttuante di ritorno a inizio pagina
+│   ├── SearchBar.tsx          # Barra di ricerca testuale
+│   ├── AlphabetGrid.tsx       # Filtro per lettera iniziale A-Z
+│   ├── SeriesFilter.tsx       # Filtro per serie Star Trek
+│   ├── SeriesBadge.tsx        # Badge grafici delle serie
+│   ├── SpeciesCarousel.tsx    # Carousel specie in evidenza
+│   ├── SpeciesMiniCard.tsx    # Card anteprima compatta nella griglia
+│   ├── SpeciesFlipCard.tsx    # Scheda interattiva con animazione flip 3D
+│   ├── SpeciesDetailOverlay.tsx # Finestra modale di dettaglio
+│   ├── SpeciesGrid.tsx        # Griglia responsiva dei risultati
+│   ├── SpeciesPortrait.tsx    # Ritratto specie con supporto immagini e fallback LCARS
+│   ├── LcarsElbow.tsx         # Elemento grafico curvilineo LCARS
+│   └── StarField.tsx          # Sfondo animato a campo stellare
 ├── pages/
-│   └── HomePage.tsx
-├── App.tsx                  # routing (/ e /species/:id)
-├── main.tsx
-└── index.css                 # font Google, direttive Tailwind, stili base
+│   ├── HomePage.tsx           # Pagina principale dell'enciclopedia
+│   └── EditorPage.tsx         # Pagina per la modifica e creazione delle schede
+├── App.tsx                    # Routing dell'applicazione e componenti globali
+├── main.tsx                   # Entry point React
+└── index.css                   # Stili globali, font e direttive Tailwind CSS
 ```
 
-## Note sui dati
+## Note Legali e Copyright
 
-Le 82 schede specie sono redatte in forma originale, basandosi sui fatti
-canonici raccolti dalla voce Wikipedia "Specie di Star Trek" e dalla
-conoscenza generale del franchise. Al posto di immagini reali (protette da
-copyright), ogni scheda mostra una "scansione bio-sensoriale" generata via
-CSS — una scelta stilistica coerente con l'idea di un archivio federale in
-cui non tutti i dati visivi sono disponibili.
-
-## Note sull'animazione flip 3D
-
-L'animazione è realizzata con CSS 3D transforms puri (`perspective`,
-`transform-style: preserve-3d`, `rotateY(180deg)`), supportati da tutti i
-browser moderni (Chrome, Firefox, Safari, Edge). Rispetta automaticamente
-la preferenza di sistema `prefers-reduced-motion`.
+Sito web amatoriale realizzato a scopo divulgativo e senza fini di lucro. Non si intende infrangere alcun copyright. I marchi registrati, i nomi dei personaggi, le specie e i loghi legati al franchise di Star Trek appartengono ai rispettivi proprietari (Paramount Global / CBS Studios).
