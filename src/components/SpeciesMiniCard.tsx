@@ -15,7 +15,12 @@ export default function SpeciesMiniCard({ species, onExpand, className = '' }: S
     <div
       className={`group flex flex-col overflow-hidden rounded-2xl rounded-tr-[2rem] border border-lcars-orange/30 bg-void-900/70 transition-transform hover:-translate-y-1 hover:border-lcars-orange ${className}`}
     >
-      <SpeciesPortrait name={species.name} classification={species.classification} className="h-32 w-full" />
+      <SpeciesPortrait
+        name={species.name}
+        classification={species.classification}
+        image={species.image}
+        className="h-32 w-full"
+      />
       <div className="flex flex-1 flex-col gap-2 p-4">
         <h3 className="lcars-heading text-lg leading-tight text-lcars-amber">{species.name}</h3>
         <p className="flex items-center gap-1.5 font-mono text-xs text-slate-400">

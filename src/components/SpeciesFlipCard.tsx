@@ -26,6 +26,7 @@ export default function SpeciesFlipCard({ species, onClose }: SpeciesFlipCardPro
           <SpeciesPortrait
             name={species.name}
             classification={species.classification}
+            image={species.image}
             className="h-44 w-full sm:h-48"
           />
           <div className="flex flex-1 flex-col gap-3 overflow-y-auto p-6">
