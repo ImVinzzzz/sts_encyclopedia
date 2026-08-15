@@ -126,6 +126,7 @@ export const speciesHQ: Species[] = [
       { code: 'TOS 1x26', title: "Corte marziale", year: 1967 },
       { code: 'TNG', title: 'Presenza ricorrente tramite Worf', year: 1987 },
     ],
+    "image": "https://i.pinimg.com/originals/12/c4/6d/12c46d93d1ff014c244ff267bdc67360.jpg"
   },
   {
     id: 'kobliad',
