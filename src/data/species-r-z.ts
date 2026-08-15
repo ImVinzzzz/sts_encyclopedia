@@ -92,8 +92,8 @@ export const speciesRZ: Species[] = [
     episodes: [{ code: 'ENT 1x02', title: 'La cabala dei Suliban', year: 2001 }],
   },
   {
-    id: 'talaxiani',
-    name: 'Talaxiani',
+    id: 'talassiani',
+    name: 'Talassiani',
     nameEnglish: 'Talaxians',
     classification: 'Umanoide',
     homeworld: 'Talax',
@@ -102,7 +102,7 @@ export const speciesRZ: Species[] = [
     tagline: 'Popolo caloroso e amante della buona cucina, alleato della Voyager.',
     description:
       "Sopravvissuti a un conflitto devastante contro gli Haakoniani, i Talaxiani sono noti per il calore umano, la passione culinaria e uno spiccato senso della famiglia allargata. Neelix, cuoco e morale officer improvvisato della USS Voyager, incarna al meglio lo spirito accogliente di questo popolo.",
-    episodes: [{ code: 'VOY 1x01', title: 'La forza di volontà (prima parte)', year: 1995 }],
+    episodes: [{ code: 'VOY 1x01', title: 'Dall\'altra parte dell\'universo (prima parte)', year: 1995 }],
   },
   {
     id: 'talariani',
@@ -111,11 +111,11 @@ export const speciesRZ: Species[] = [
     classification: 'Umanoide',
     homeworld: 'Talar IV',
     quadrant: 'Alfa',
-    series: ['TNG'],
+    series: ['TNG', 'LD'],
     tagline: 'Cultura militare orgogliosa, con rigide leggi sull\'adozione.',
     description:
       "Società fortemente gerarchica e militarizzata, i Talariani seguono rigide tradizioni legali riguardo l'adozione di orfani di guerra, che vengono integrati a pieno titolo nelle famiglie talariane. Un caso di custodia contesa con la Federazione mette alla prova questi principi davanti all'equipaggio dell'Enterprise-D.",
-    episodes: [{ code: 'TNG 4x08', title: 'Sangue del mio sangue', year: 1990 }],
+    episodes: [{ code: 'TNG 5x02', title: 'Darmok', year: 1991 }],
   },
   {
     id: 'tellariti',
