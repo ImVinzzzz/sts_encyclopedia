@@ -13,7 +13,7 @@ export const speciesAG: Species[] = [
     description:
       "Fisicamente indistinguibili dagli esseri umani se non per i tatuaggi decorativi sul viso, gli Acamariani hanno vissuto per lungo tempo una società organizzata in clan, dove l'appartenenza a un gruppo familiare è motivo di prestigio e di aspri conflitti. Una fazione nomade, i Radunatori, abbandonò il pianeta natale per darsi alla razzia spaziale, portando a una faida durata circa tre secoli tra due casate rivali.",
     episodes: [{ code: 'TNG 3x15', title: 'Fattore vendetta', year: 1989 }],
-    "image": "https://static.wikia.nocookie.net/stpendragon/images/a/aa/Marouk.jpg"
+    image: "https://static.wikia.nocookie.net/stpendragon/images/a/aa/Marouk.jpg"
   },
   {
     id: 'aenar',
