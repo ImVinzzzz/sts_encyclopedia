@@ -63,6 +63,13 @@ export const Footer: FC = () => {
           )}
         </div>
       </div>
+
+      {/* Disclaimer Copyright e Note Legali */}
+      <div className="mt-4 border-t border-void-800/80 px-2 pt-4">
+        <p className="text-center font-condensed text-xs leading-relaxed text-slate-400">
+          Sito web amatoriale senza fini di lucro, non si intende infrangere alcun copyright. I marchi, i loghi e i nomi registrati legati all&apos;universo di Star Trek appartengono ai rispettivi proprietari (Paramount Global / CBS Studios). I dati e le informazioni sono raccolti ed elaborati a scopo informativo e divulgativo dai canoni ufficiali e dagli archivi di Star Trek.
+        </p>
+      </div>
     </footer>
   )
 }
