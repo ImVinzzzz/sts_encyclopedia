@@ -1,2 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-export default { content:['./index.html','./src/**/*.{ts,tsx}'], theme:{extend:{fontFamily:{mono:['ui-monospace','SFMono-Regular','Menlo','monospace']},boxShadow:{lcars:'0 0 30px rgba(153,204,255,.10)'}}}, plugins:[] };
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        lcars: {
+          orange: '#ff9900',
+          purple: '#cc99cc',
+          blue: '#99ccff',
+          gold: '#ffcc00',
+          red: '#cc3333',
+        },
+      },
+      fontFamily: {
+        lcars: ['"Antonio"', '"Arial Narrow"', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+};
