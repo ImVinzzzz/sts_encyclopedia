@@ -14,11 +14,13 @@ export default function FeaturedCarousel({ items, onSelect }: FeaturedCarouselPr
 
   if (items.length === 0) return null;
 
+  const maxIndex = Math.max(0, items.length - 3);
+
   const move = (direction: -1 | 1) => {
     const viewport = viewportRef.current;
     if (!viewport) return;
 
-    const nextIndex = Math.min(Math.max(currentIndex + direction, 0), items.length - 1);
+    const nextIndex = Math.min(Math.max(currentIndex + direction, 0), maxIndex);
     const card = viewport.firstElementChild as HTMLElement | null;
     const gap = 12;
     viewport.scrollTo({ left: nextIndex * ((card?.offsetWidth ?? 0) + gap), behavior: 'smooth' });
@@ -86,7 +88,7 @@ export default function FeaturedCarousel({ items, onSelect }: FeaturedCarouselPr
         <button
           type="button"
           onClick={() => move(1)}
-          disabled={currentIndex === items.length - 1}
+          disabled={currentIndex === maxIndex}
           aria-label="Specie successive"
           className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-lcars-orange text-lg text-slate-950 transition-colors hover:bg-lcars-gold disabled:cursor-not-allowed disabled:opacity-35 sm:h-14 sm:w-14"
         >

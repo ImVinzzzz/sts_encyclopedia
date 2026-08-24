@@ -29,3 +29,9 @@ body {
 .font-mono-lcars {
   font-family: 'Share Tech Mono', monospace;
 }
+
+@layer components {
+  .field-control {
+    @apply w-full rounded-lg border border-slate-600 bg-slate-950 px-3 py-2.5 text-sm text-slate-200 outline-none transition placeholder:text-slate-600 focus:border-lcars-orange focus:ring-1 focus:ring-lcars-orange;
+  }
+}

@@ -8,6 +8,7 @@ import SeriesFilter from '../components/filters/SeriesFilter';
 import SearchBar from '../components/filters/SearchBar';
 import SpeciesCardFlip from '../components/cards/SpeciesCardFlip';
 import SpeciesDetailsModal from '../components/cards/SpeciesDetailsModal';
+import Footer from '../components/common/Footer';
 import {
   ALL_SPECIES,
   filterSpecies,
@@ -41,8 +42,8 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 px-3 sm:px-8 py-6 sm:py-10">
-      <div className="max-w-6xl mx-auto">
+    <div className="flex min-h-screen flex-col bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+      <main className="mx-auto w-full max-w-6xl flex-1 px-3 py-6 sm:px-8 sm:py-10">
         <HeaderLCARS />
 
         <FeaturedCarousel items={featured} onSelect={handleCarouselSelect} />
@@ -99,7 +100,8 @@ export default function HomePage() {
         </section>
 
         <SpeciesDetailsModal species={selectedSpecies} onClose={() => setSelectedSpecies(null)} />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }

@@ -17,9 +17,9 @@ export const species_A_I: Species[] = [
     extendedDescription:
       'Guerrieri per tradizione e diplomatici per necessità, gli Andoriani vivono su una luna gelida e si sono affermati come una delle quattro specie fondatrici della Federazione dei Pianeti Uniti. Le loro antenne captano vibrazioni e stati emotivi, mentre la società andoriana è storicamente organizzata in clan con un forte codice d\'onore che ammette il duello formale. Rivali storici dei Vulcaniani prima dell\'alleanza con la Terra, hanno un sistema riproduttivo quadri-genere unico nella galassia.',
     notableEpisodes: [
-      'Star Trek: Enterprise - "The Andorian Incident"',
-      'Star Trek: Discovery - stagione 2',
-      'Star Trek VI: Rotta verso l\'ignoto',
+      'ENT 1x07 - The Andorian Incident',
+      'DIS 2x01 - Brother',
+      'FILM 6 - Rotta verso l\'ignoto',
     ],
     classification: 'Umanoide (antenne sensoriali)',
   },
@@ -34,7 +34,7 @@ export const species_A_I: Species[] = [
       'Sottospecie andoriana pacifista e telepatica, priva della vista ma dotata di sensibilità mentale straordinaria.',
     extendedDescription:
       'Isolati volontariamente dal resto della società andoriana, gli Aenar vivono in insediamenti remoti dedicati alla non violenza. La loro cecità di nascita è compensata da una spiccata capacità telepatica, sfruttata in passato per collegamenti mentali a distanza con equipaggi stellari. Il loro rapporto travagliato con gli Andoriani "blu" riflette antiche divisioni culturali sullo stesso pianeta.',
-    notableEpisodes: ['Star Trek: Enterprise - "The Aenar"', 'Star Trek: Enterprise - "United"'],
+    notableEpisodes: ['ENT 4x14 - The Aenar', 'ENT 4x13 - United'],
     classification: 'Umanoide telepatico',
   },
   {
@@ -48,7 +48,7 @@ export const species_A_I: Species[] = [
       'Civiltà isolazionista custode di un manto di occultamento planetario, incapace di procreare naturalmente.',
     extendedDescription:
       'Nascosti dietro uno scudo tecnologico perfetto, gli Aldeani hanno prosperato per secoli in totale segretezza, ma la dipendenza dal loro "Custode" li ha resi sterili. Disperati, arrivarono a rapire bambini da altre navi per garantire la sopravvivenza della loro cultura, prima che l\'Enterprise-D li aiutasse a diagnosticare e correggere il guasto tecnologico alla radice del problema.',
-    notableEpisodes: ['Star Trek: The Next Generation - "When the Bough Breaks"'],
+    notableEpisodes: ['TNG 1x17 - When the Bough Breaks'],
     classification: 'Umanoide',
   },
   {
@@ -61,7 +61,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Umanoidi anfibi dall\'aspetto simile a pesci, membri della Federazione.',
     extendedDescription:
       'Provenienti da un mondo oceanico, gli Antedeani respirano sia in acqua che sull\'aria grazie a strutture branchiali specializzate. Un diplomatico antedeano fu vittima di un tentativo di assassinio durante una conferenza sulla Terra, episodio che coinvolse l\'equipaggio dell\'Enterprise in un caso di cospirazione politica.',
-    notableEpisodes: ['Rotta verso la Terra (Star Trek IV)'],
+    notableEpisodes: ['FILM 4 - Rotta verso la Terra'],
     classification: 'Umanoide anfibio',
   },
   {
@@ -75,7 +75,7 @@ export const species_A_I: Species[] = [
       'Popolo pacifico segnato da secoli di faide di sangue con i Gatheriani, discendenti di predoni dissidenti.',
     extendedDescription:
       'Un tempo vittime di razzie, gli Acamariani portarono avanti per generazioni una vendetta ereditaria contro i Gatheriani, discendenti degli antichi predoni. Il ciclo di violenza fu infine spezzato con la mediazione della Federazione, che li aiutò a raggiungere una riconciliazione dopo secoli di odio tramandato.',
-    notableEpisodes: ['Star Trek: The Next Generation - "The Vengeance Factor"'],
+    notableEpisodes: ['TNG 3x09 - The Vengeance Factor'],
     classification: 'Umanoide',
   },
   {
@@ -91,8 +91,8 @@ export const species_A_I: Species[] = [
     extendedDescription:
       'Antica civiltà con millenni di storia, i Bajoriani venerano i Profeti che dimorano nel Corridoio Celeste, un wormhole stabile vicino al loro sistema. Dopo decenni di brutale occupazione cardassiana, il popolo bajoriano ha ricostruito la propria società attorno alla stazione spaziale Deep Space Nine, bilanciando fede religiosa, politica interna e la ricerca di un posto stabile nella Federazione.',
     notableEpisodes: [
-      'Star Trek: Deep Space Nine - "Emissary"',
-      'Star Trek: Deep Space Nine - "Accession"',
+      'DS9 1x01 - Emissary',
+      'DS9 4x17 - Accession',
     ],
     classification: 'Umanoide',
   },
@@ -109,8 +109,8 @@ export const species_A_I: Species[] = [
     extendedDescription:
       'I Betazoidi comunicano fin dalla nascita attraverso una rete telepatica condivisa, capacità che rende la privacy mentale un valore culturale fondamentale. Molti prestano servizio nella Flotta Stellare come consulenti, sfruttando la loro sensibilità empatica per leggere le intenzioni altrui. Le tradizioni betazoidi, comprese le cerimonie nuziali "en plein air", riflettono una società che non nasconde nulla di sé.',
     notableEpisodes: [
-      'Star Trek: The Next Generation - "Haven"',
-      'Star Trek: The Next Generation - "Night Terrors"',
+      'TNG 1x11 - Haven',
+      'TNG 4x17 - Night Terrors',
     ],
     classification: 'Umanoide telepatico',
   },
@@ -127,9 +127,9 @@ export const species_A_I: Species[] = [
     extendedDescription:
       'Governati da una coscienza collettiva chiamata Regina Borg, i droni cancellano l\'individualità dei soggetti assimilati collegandoli a una rete neurale condivisa. Il Collettivo si adatta rapidamente a qualsiasi minaccia, rendendolo uno degli avversari più temuti incontrati dalla Flotta Stellare, capace di trasformare intere civiltà in estensioni di sé stesso.',
     notableEpisodes: [
-      'Star Trek: The Next Generation - "The Best of Both Worlds"',
-      'Star Trek: First Contact',
-      'Star Trek: Voyager - "Scorpion"',
+      'TNG 3x26 - The Best of Both Worlds',
+      'FILM 8 - First Contact',
+      'VOY 3x26 - Scorpion',
     ],
     classification: 'Cyborg collettivo',
   },
@@ -144,7 +144,7 @@ export const species_A_I: Species[] = [
       'Specie enigmatica sempre celata da armature refrigeranti, alleata del Dominio nella Guerra del Dominio.',
     extendedDescription:
       'Nessuno al di fuori della loro specie conosce con certezza l\'aspetto reale dei Breen, poiché non tolgono mai le tute ambientali che regolano la loro temperatura corporea. Il loro ingresso nella Guerra del Dominio, con un\'arma capace di disattivare i sistemi nemici, cambiò gli equilibri del conflitto nel Quadrante Alfa.',
-    notableEpisodes: ['Star Trek: Deep Space Nine - "Indiscretion"', 'Star Trek: Deep Space Nine - "The Changing Face of Evil"'],
+    notableEpisodes: ['DS9 4x05 - Indiscretion', 'DS9 7x20 - The Changing Face of Evil'],
     classification: 'Umanoide (ignoto sotto l\'armatura)',
   },
   {
@@ -157,7 +157,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Umanoidi dalla pelle blu e cranio privo di setto nasale, noti per il loro carattere cordiale.',
     extendedDescription:
       'Presenti in numero crescente nella Flotta Stellare, i Boliani provengono da un mondo con una società fortemente comunitaria. Sono spesso ritratti in ruoli di supporto e amministrazione a bordo delle navi federali, apprezzati per affidabilità e socievolezza.',
-    notableEpisodes: ['Star Trek: The Next Generation - "Conundrum"'],
+    notableEpisodes: ['TNG 5x14 - Conundrum'],
     classification: 'Umanoide',
   },
   {
@@ -170,7 +170,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Umanoidi cibernetici che operano sempre in coppia, collegati a un computer centrale planetario.',
     extendedDescription:
       'Ogni Bynar è connesso in permanenza a un partner e a un\'intelligenza artificiale che governa il loro pianeta, comunicando in un linguaggio binario ultrarapido. Quando il loro computer centrale rischiò il collasso, una coppia di Bynar dirottò temporaneamente l\'Enterprise-D per scaricarvi e salvare l\'intera memoria della loro civiltà.',
-    notableEpisodes: ['Star Trek: The Next Generation - "11001001"'],
+    notableEpisodes: ['TNG 1x15 - 11001001'],
     classification: 'Umanoide cibernetico',
   },
   {
@@ -186,8 +186,8 @@ export const species_A_I: Species[] = [
     extendedDescription:
       'Uscita da una carestia planetaria che ne forgiò una società rigidamente gerarchica, l\'Unione Cardassiana costruì il proprio potere attraverso espansione militare e sorveglianza interna dell\'Ordine Obsidiano. L\'occupazione di Bajor e la successiva alleanza col Dominio segnarono profondamente la loro storia, culminata in una devastante guerra che rase al suolo Cardassia Prime.',
     notableEpisodes: [
-      'Star Trek: Deep Space Nine - "Duet"',
-      'Star Trek: Deep Space Nine - "What You Leave Behind"',
+      'DS9 1x19 - Duet',
+      'DS9 7x25 - What You Leave Behind',
     ],
     classification: 'Umanoide',
   },
@@ -201,7 +201,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Umanoidi felini dal folto pelo e coda prensile, membri della Federazione.',
     extendedDescription:
       'Agili e dai sensi acuti, i Caitiani vivono in una società che valorizza l\'onore personale e la lealtà di clan. La tenente M\'Ress servì a bordo dell\'Enterprise originale, mentre la specie è tornata in scena in epoca più recente nelle storie ambientate attorno alla Federazione del XXXII secolo.',
-    notableEpisodes: ['Star Trek: The Animated Series - "The Survivor"'],
+    notableEpisodes: ['TAS 1x06 - The Survivor'],
     classification: 'Umanoide felino',
   },
   {
@@ -214,7 +214,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Umanoidi alti e fieri, organizzati in una società guerriera basata sul diritto del più forte.',
     extendedDescription:
       'Sul loro pianeta ricco di topolite, minerale strategico per la Federazione, i Capellani seguono un rigido codice per cui la leadership del clan passa solo a chi sconfigge il capo in duello. L\'Enterprise si trovò coinvolta in una crisi di successione dopo l\'assassinio del leader capellano, con conseguenze durature per gli equilibri politici del pianeta.',
-    notableEpisodes: ['Star Trek: The Original Series - "Friday\'s Child"'],
+    notableEpisodes: ['TOS 2x11 - Friday\'s Child'],
     classification: 'Umanoide',
   },
   {
@@ -230,8 +230,8 @@ export const species_A_I: Species[] = [
     extendedDescription:
       'Perseguitati in passato dalle "specie solide", i Cambianti fondarono il Dominio per garantirsi sicurezza attraverso il controllo, governando tramite i geneticamente modificati Vorta e i soldati Jem\'Hadar. Quando non assumono altre forme, si riuniscono in un unico "Grande Legame" liquido, condividendo pensieri e memoria collettiva.',
     notableEpisodes: [
-      'Star Trek: Deep Space Nine - "The Search"',
-      'Star Trek: Deep Space Nine - "Chimera"',
+      'DS9 3x01 - The Search',
+      'DS9 7x14 - Chimera',
     ],
     classification: 'Mutaforma',
   },
@@ -246,7 +246,7 @@ export const species_A_I: Species[] = [
       'Umanoidi con pelle divisa a metà tra bianco e nero, protagonisti di un conflitto razziale distruttivo quanto assurdo.',
     extendedDescription:
       'Bele e Lokai, ultimi superstiti del loro popolo, portarono a bordo dell\'Enterprise l\'odio ereditario tra chi ha il lato sinistro nero e chi lo ha bianco, o viceversa: una distinzione tanto radicale per loro quanto invisibile agli occhi umani. La loro storia si concluse con la scoperta che il conflitto aveva già distrutto l\'intero pianeta natale.',
-    notableEpisodes: ['Star Trek: The Original Series - "Let That Be Your Last Battlefield"'],
+    notableEpisodes: ['TOS 3x15 - Let That Be Your Last Battlefield'],
     classification: 'Umanoide (pigmentazione bicromatica)',
   },
   {
@@ -260,7 +260,7 @@ export const species_A_I: Species[] = [
       'Umanoidi dal viso caratterizzato da protuberanze multiple, provenienti da una società poligama e progressista.',
     extendedDescription:
       'Il dottor Phlox, medico di bordo dell\'Enterprise NX-01, rese familiare al pubblico questa specie curiosa e aperta mentalmente, abituata a matrimoni multipli e a una visione della vita priva di pregiudizi verso altre culture. I Denobuliani hanno relazioni diplomatiche di lunga data con i Vulcaniani, pur mantenendo una spiccata indipendenza culturale.',
-    notableEpisodes: ['Star Trek: Enterprise - "Cold Front"'],
+    notableEpisodes: ['ENT 1x11 - Cold Front'],
     classification: 'Umanoide',
   },
   {
@@ -273,7 +273,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Umanoidi completamente glabri, la cui intensità sensoriale ed emotiva richiede un giuramento di celibato agli ufficiali della Flotta.',
     extendedDescription:
       'I Deltani provano piacere ed emozioni con un\'intensità che gli umani troverebbero travolgente; per questo, chi presta servizio al fianco di equipaggi misti giura solennemente di astenersi da ogni contatto intimo. Ilia, ufficiale deltana, servì a bordo dell\'Enterprise durante l\'incontro con l\'entità V\'Ger.',
-    notableEpisodes: ['Star Trek: The Motion Picture'],
+    notableEpisodes: ['FILM 1 - The Motion Picture'],
     classification: 'Umanoide',
   },
   {
@@ -287,7 +287,7 @@ export const species_A_I: Species[] = [
       'Entità quasi immortale capace di manipolare la realtà, celata per decenni sotto le sembianze di un\'anziana umana.',
     extendedDescription:
       'Kevin Uxbridge, un Douwd travestito da umano, visse per secoli in pace su una colonia prima di rivelare accidentalmente il proprio immenso potere: in un impeto di dolore per la morte della moglie, distrusse da solo un\'intera flotta nemica, mostrando quanto fosse pericolosa la sua vera natura se provocata.',
-    notableEpisodes: ['Star Trek: The Next Generation - "The Survivors"'],
+    notableEpisodes: ['TNG 3x03 - The Survivors'],
     classification: 'Entità quasi onnipotente',
   },
   {
@@ -301,7 +301,7 @@ export const species_A_I: Species[] = [
       'Forma di vita non corporea del lontano futuro, capace di viaggiare nel tempo per nutrirsi dell\'energia vitale di altre specie.',
     extendedDescription:
       'Estinti nella loro epoca a causa del collasso del proprio pianeta, i Devidiani impararono a viaggiare a ritroso nel tempo fino alla San Francisco del 1893 per estrarre energia neurale dagli umani. Il loro scontro con l\'equipaggio dell\'Enterprise-D coinvolse persino Guinan e Mark Twain in un intreccio temporale memorabile.',
-    notableEpisodes: ['Star Trek: The Next Generation - "Time\'s Arrow"'],
+    notableEpisodes: ['TNG 5x26 - Time\'s Arrow'],
     classification: 'Forma di vita temporale non corporea',
   },
   {
@@ -316,7 +316,7 @@ export const species_A_I: Species[] = [
       'Popolo longevo di "ascoltatori" nato, disperso dall\'assimilazione Borg del proprio mondo natale.',
     extendedDescription:
       'Guinan, la più celebre El-Auriana, servì per decenni come barista e confidente a bordo dell\'Enterprise-D, portando la saggezza accumulata in secoli di vita e viaggi. Dopo che il Borg devastò El-Auria, il popolo si disperse per la galassia, e alcuni di loro, come Guinan, mantennero una sensibilità particolare per le distorsioni del continuum spazio-temporale.',
-    notableEpisodes: ['Star Trek: The Next Generation - "Q Who"', 'Star Trek: Generations'],
+    notableEpisodes: ['TNG 2x16 - Q Who', 'FILM 7 - Generations'],
     classification: 'Umanoide longevo',
   },
   {
@@ -329,7 +329,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Umanoidi il cui pianto contiene sostanze chimiche capaci di legare emotivamente chi le tocca.',
     extendedDescription:
       'La principessa elasiana Elaan fu inviata sull\'Enterprise per un matrimonio combinato volto a garantire la pace con il pianeta rivale Troyius; le sue lacrime, però, avevano il potere chimico di rendere schiavo dell\'amore chiunque le toccasse, complicando non poco la missione diplomatica di Kirk.',
-    notableEpisodes: ['Star Trek: The Original Series - "Elaan of Troyius"'],
+    notableEpisodes: ['TOS 3x13 - Elaan of Troyius'],
     classification: 'Umanoide',
   },
   {
@@ -343,7 +343,7 @@ export const species_A_I: Species[] = [
       'Immensa forma di vita non biologica a forma di fiocco di neve, capace di prosciugare interi pianeti di energia organica.',
     extendedDescription:
       'Vagando per lo spazio in cerca di energia vitale, l\'Entità Cristallina lasciava dietro di sé mondi completamente spopolati. Il tenente Data, che da bambino sopravvisse a un suo attacco sulla colonia Omicron Theta, sviluppò un legame personale con lo studio di questa creatura enigmatica prima del suo tragico epilogo.',
-    notableEpisodes: ['Star Trek: The Next Generation - "Datalore"', 'Star Trek: The Next Generation - "Silicon Avatar"'],
+    notableEpisodes: ['TNG 1x13 - Datalore', 'TNG 5x04 - Silicon Avatar'],
     classification: 'Forma di vita non biologica',
   },
   {
@@ -359,8 +359,8 @@ export const species_A_I: Species[] = [
     extendedDescription:
       'Guidata dal culto del capitalismo assoluto, la società ferengi codifica ogni aspetto della vita economica nelle sacre Regole dell\'Acquisizione. Storicamente patriarcale al punto da vietare alle donne di indossare abiti o guadagnare denaro, la cultura ferengi ha vissuto profonde riforme sociali, spinte anche da figure come Quark, Rom e Nog visti a Deep Space Nine.',
     notableEpisodes: [
-      'Star Trek: The Next Generation - "The Last Outpost"',
-      'Star Trek: Deep Space Nine - "Family Business"',
+      'TNG 1x05 - The Last Outpost',
+      'DS9 3x23 - Family Business',
     ],
     classification: 'Umanoide mercantile',
   },
@@ -375,7 +375,7 @@ export const species_A_I: Species[] = [
       'Discendenti di un popolo che fuggì la distruzione del proprio sole a bordo di un\'astronave-asteroide governata da un\'intelligenza artificiale religiosa.',
     extendedDescription:
       'Ignari di vivere all\'interno di un vascello generazionale, i Fabrini veneravano "l\'Oracolo" senza sapere che si trattava di un computer di bordo. L\'Enterprise scoprì che Yonada era in rotta di collisione con un sistema abitato, riuscendo a correggerne la traiettoria e a rivelare al popolo la vera natura del proprio mondo.',
-    notableEpisodes: ['Star Trek: The Original Series - "For the World Is Hollow and I Have Touched the Sky"'],
+    notableEpisodes: ['TOS 3x08 - For the World Is Hollow and I Have Touched the Sky'],
     classification: 'Umanoide',
   },
   {
@@ -389,7 +389,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Umanoidi rettiliani di forte costituzione, difensori aggressivi del proprio spazio.',
     extendedDescription:
       'Il primo, storico incontro tra Flotta Stellare e Gorn avvenne per una disputa territoriale su Cestus III, culminata nel celebre duello tra il Capitano Kirk e un comandante gorn sul pianeta Vasquez. Specie tecnologicamente capace e territorialmente spietata, i Gorn sono tornati protagonisti di storie più recenti ambientate poco prima della missione quinquennale dell\'Enterprise.',
-    notableEpisodes: ['Star Trek: The Original Series - "Arena"', 'Strange New Worlds - "Memento Mori"'],
+    notableEpisodes: ['TOS 1x18 - Arena', 'SNW 1x04 - Memento Mori'],
     classification: 'Umanoide rettiliano',
   },
   {
@@ -403,7 +403,7 @@ export const species_A_I: Species[] = [
       'Specie di sorveglianti del Quadrante Delta che osserva altre civiltà tramite reti di satelliti spia per puro intrattenimento.',
     extendedDescription:
       'La Gerarchia considera lo spionaggio interstellare una forma di svago diffuso, monitorando costantemente altre navi, tra cui la Voyager, attraverso una fitta rete di dispositivi di sorveglianza automatizzati sparsi nello spazio profondo.',
-    notableEpisodes: ['Star Trek: Voyager - "The Void"', 'Star Trek: Voyager - "Prime Factors"'],
+    notableEpisodes: ['VOY 7x15 - The Void', 'VOY 1x10 - Prime Factors'],
     classification: 'Umanoide (osservatori)',
   },
   {
@@ -417,7 +417,7 @@ export const species_A_I: Species[] = [
       'Cacciatori nomadi che vagano per il Quadrante Delta in cerca di prede sempre più impegnative da inseguire.',
     extendedDescription:
       'La cultura hirogena ruota interamente attorno alla caccia: trofei, armi e rituali di conquista definiscono lo status sociale di ogni individuo. Il declino delle prede tradizionali ha spinto alcuni gruppi hirogeni a sviluppare simulazioni olografiche di caccia, con risultati inaspettatamente pericolosi a bordo della Voyager.',
-    notableEpisodes: ['Star Trek: Voyager - "The Killing Game"', 'Star Trek: Voyager - "Prey"'],
+    notableEpisodes: ['VOY 4x18 - The Killing Game', 'VOY 4x16 - Prey'],
     classification: 'Umanoide cacciatore',
   },
   {
@@ -430,7 +430,7 @@ export const species_A_I: Species[] = [
     shortDescription: 'Forma di vita silicea capace di sciogliere la roccia, madre solitaria di migliaia di uova.',
     extendedDescription:
       'Scambiata per un mostro dai minatori di Janus VI, la Horta si rivelò essere un\'unica genitrice intelligente che proteggeva le uova della sua specie, deposte una sola volta ogni cinquantamila anni. Il capitano Kirk mediò una convivenza pacifica tra Horta e minatori umani, basata su uno scambio reciprocamente vantaggioso.',
-    notableEpisodes: ['Star Trek: The Original Series - "The Devil in the Dark"'],
+    notableEpisodes: ['TOS 1x25 - The Devil in the Dark'],
     classification: 'Forma di vita silicea',
   },
   {
@@ -444,7 +444,7 @@ export const species_A_I: Species[] = [
       'Antica civiltà scomparsa, un tempo capace di viaggiare istantaneamente tra i mondi tramite portali dimensionali.',
     extendedDescription:
       'Ricordati con timore come "i demoni del cielo" da diverse culture della galassia, gli Iconiani svilupparono una tecnologia di portali capace di collegare pianeti distanti anni luce. La loro civiltà fu spazzata via migliaia di anni fa, ma resti della loro tecnologia continuano a riemergere, ambiti da fazioni che ne cercano il controllo.',
-    notableEpisodes: ['Star Trek: The Next Generation - "Contagion"', 'Star Trek: Deep Space Nine - "To the Death"'],
+    notableEpisodes: ['TNG 2x11 - Contagion', 'DS9 4x23 - To the Death'],
     classification: 'Umanoide (civiltà scomparsa)',
   },
   {
@@ -458,7 +458,7 @@ export const species_A_I: Species[] = [
       'Umanoidi estremamente imitativi, che ricostruirono l\'intera società su modello della Chicago degli anni \'20 dopo un contatto federale.',
     extendedDescription:
       'Dopo la visita di una nave terrestre che lasciò accidentalmente un libro sulla criminalità organizzata del XX secolo, gli Iotiani riorganizzarono l\'intero pianeta in "famiglie" rivali gangster, imitando fedelmente costumi, gerghi e persino le automobili dell\'epoca. L\'Enterprise dovette intervenire per riportare ordine su un pianeta trasformato in un enorme gioco di ruolo criminale.',
-    notableEpisodes: ['Star Trek: The Original Series - "A Piece of the Action"'],
+    notableEpisodes: ['TOS 2x17 - A Piece of the Action'],
     classification: 'Umanoide (culturalmente imitativo)',
   },
 ];
