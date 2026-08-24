@@ -7,6 +7,7 @@ import AlphabetFilter from '../components/filters/AlphabetFilter';
 import SeriesFilter from '../components/filters/SeriesFilter';
 import SearchBar from '../components/filters/SearchBar';
 import SpeciesCardFlip from '../components/cards/SpeciesCardFlip';
+import SpeciesDetailsModal from '../components/cards/SpeciesDetailsModal';
 import {
   ALL_SPECIES,
   filterSpecies,
@@ -19,7 +20,7 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLetter, setSelectedLetter] = useState('ALL');
   const [selectedSeries, setSelectedSeries] = useState<StarTrekSeries[]>([]);
-  const [autoFlipId, setAutoFlipId] = useState<string | null>(null);
+  const [selectedSpecies, setSelectedSpecies] = useState<Species | null>(null);
 
   const featured = useMemo(() => getFeaturedSpecies(), []);
   const availableLetters = useMemo(() => getAvailableLetters(), []);
@@ -36,17 +37,7 @@ export default function HomePage() {
   };
 
   const handleCarouselSelect = (species: Species) => {
-    setSearchQuery('');
-    setSelectedSeries([]);
-    setSelectedLetter('ALL');
-    setAutoFlipId(species.id);
-    requestAnimationFrame(() => {
-      setTimeout(() => {
-        document
-          .getElementById(`species-${species.id}`)
-          ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }, 50);
-    });
+    setSelectedSpecies(species);
   };
 
   return (
@@ -90,12 +81,8 @@ export default function HomePage() {
 
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-16">
           {results.map((s) => (
-            <div id={`species-${s.id}`} key={s.id}>
-              <SpeciesCardFlip
-                species={s}
-                forceFlipped={autoFlipId === s.id ? true : undefined}
-                onFlipChange={autoFlipId === s.id ? () => setAutoFlipId(null) : undefined}
-              />
+            <div key={s.id}>
+              <SpeciesCardFlip species={s} onSelect={setSelectedSpecies} />
             </div>
           ))}
 
@@ -110,6 +97,8 @@ export default function HomePage() {
             </div>
           )}
         </section>
+
+        <SpeciesDetailsModal species={selectedSpecies} onClose={() => setSelectedSpecies(null)} />
       </div>
     </div>
   );
